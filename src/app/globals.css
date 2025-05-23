@@ -1,11 +1,8 @@
+@import './halloween-theme.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './halloween-theme.css';
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 @layer base {
   :root {
