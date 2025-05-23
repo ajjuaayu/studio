@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './halloween-theme.css';
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -43,38 +44,48 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --background: 25 16% 18%; /* Dark grayish orange #362D26 */
+    --foreground: 30 43% 93%; /* Light beige #F0E6DD */
+
+    --card: 25 16% 22%; /* Slightly lighter than background for cards */
+    --card-foreground: 30 43% 93%;
+
+    --popover: 25 16% 12%; /* Darker for popovers */
+    --popover-foreground: 30 43% 93%;
+
+    --primary: 33 100% 50%; /* Deep orange #FF8C00 */
+    --primary-foreground: 25 15% 8%; /* Dark color for text on primary */
+
+    --secondary: 42 100% 55%; /* Darker Yellow-orange #FFC12F */
+    --secondary-foreground: 25 15% 8%; /* Dark color for text on secondary */
+
+    --muted: 25 16% 28%;
+    --muted-foreground: 30 43% 70%;
+
+    --accent: 42 100% 63%; /* Yellow-orange #FFC844 */
+    --accent-foreground: 25 15% 8%; /* Dark color for text on accent */
+
+    --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+
+    --border: 25 16% 30%;
+    --input: 25 16% 24%; 
+    --ring: 33 100% 50%; /* Deep orange for ring */
+
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    --sidebar-background: 25 16% 15%; /* Darker sidebar */
+    --sidebar-foreground: 30 43% 85%;
+    --sidebar-primary: 33 100% 50%; /* Deep orange for sidebar primary */
+    --sidebar-primary-foreground: 25 15% 8%;
+    --sidebar-accent: 42 100% 63%; /* Yellow-orange for sidebar accent */
+    --sidebar-accent-foreground: 25 15% 8%;
+    --sidebar-border: 25 16% 25%;
+    --sidebar-ring: 33 100% 50%;
   }
 }
 

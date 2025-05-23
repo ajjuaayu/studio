@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'], // Use Inter as primary sans-serif
+        creepster: ['var(--font-creepster)', 'cursive'], // Add Creepster
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

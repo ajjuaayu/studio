@@ -1,0 +1,82 @@
+
+@layer utilities {
+  .font-creepster {
+    font-family: 'Creepster', cursive;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(-2deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(2deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(-2deg);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float-bat {
+    0% {
+      transform: translateY(0px) translateX(0px) rotate(-5deg);
+    }
+    25% {
+      transform: translateY(-10px) translateX(5px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(0px) translateX(10px) rotate(5deg);
+    }
+    75% {
+      transform: translateY(5px) translateX(5px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(0px) translateX(0px) rotate(-5deg);
+    }
+  }
+
+  .animate-bat-float {
+    animation: float-bat 5s ease-in-out infinite;
+  }
+
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px hsl(var(--accent) / 0.8),
+        0 0 11px hsl(var(--accent) / 0.8),
+        0 0 19px hsl(var(--accent) / 0.8),
+        0 0 40px hsl(var(--primary)),
+        0 0 80px hsl(var(--primary)),
+        0 0 90px hsl(var(--primary)),
+        0 0 100px hsl(var(--primary)),
+        0 0 150px hsl(var(--primary));
+      opacity: 1;
+    }
+    20%, 24%, 55% {        
+      text-shadow: none;
+      opacity: 0.9;
+    }
+  }
+
+  .animate-flicker-text {
+    animation: flicker 2s linear infinite;
+  }
+
+  .halloween-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+  .halloween-scroll::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 10px;
+  }
+  .halloween-scroll::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 10px;
+  }
+  .halloween-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent));
+  }
+}
